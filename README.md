@@ -19,17 +19,17 @@ Options used in SocketTesting.yaml to configure test 💎 as per requirement !!
 
 2):- Ensure:- Goes with to otpn max (fail if max response time exceeds 500ms) and maxErrorRate (fail if error rate exceeds 1%) !!
 
-3:- transports:- Here We Set Protocol So Be Set ["websocket"] For testing Socket !!
+3):- transports:- Here We Set Protocol So Be Set ["websocket"] For testing Socket !!
 
-4:- processor:- Here We Mention the File Name Where we Want tho load dynamic scenario !!
+4):- processor:- Here We Mention the File Name Where we Want tho load dynamic scenario !!
 
-5:- phases:- in this Optn We Have duration (time test Run's in Milliseconds), arrivalRate (onStart the User we Have), rampTo (Will ramp Up User gradually), name (Name For That Phase) !!
+5):- phases:- in this Optn We Have duration (time test Run's in Milliseconds), arrivalRate (onStart the User we Have), rampTo (Will ramp Up User gradually), name (Name For That Phase) !!
 
-6:- scenarios:- Here We Define The Flow For Test case !!
+6):- scenarios:- Here We Define The Flow For Test case !!
 
-7:- engine:- we Set engine To 'socketio' !!
+7):- engine:- we Set engine To 'socketio' !!
 
-8:- flow:- Here we Set Whole Flow What and which channel is hit While testing, we have three option 
+8):- flow:- Here we Set Whole Flow What and which channel is hit While testing, we have three option 
 
 8.1):-function (load function from custom.js Which get's Dummy Data)
 
