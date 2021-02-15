@@ -29,7 +29,13 @@ Options used in SocketTesting.yaml to configure test 💎 as per requirement !!
 
 7:- engine:- we Set engine To 'socketio' !!
 
-8:- flow:- Here we Set Whole Flow What and which channel is hit While testing, we have three option function (load function from custom.js Which get's Dummy Data), emit (Inside this we have Channel (Socket Channel) and Data (data to send in that event(channel)) otpn), think (do nothing for 5 seconds, then disconnect) !!
+8:- flow:- Here we Set Whole Flow What and which channel is hit While testing, we have three option 
+
+8.1):-function (load function from custom.js Which get's Dummy Data)
+
+8.2):- emit (Inside this we have Channel (Socket Channel) and Data (data to send in that event(channel)) otpn)
+
+8.3):- think (do nothing for 5 seconds, then disconnect) !!
 
 Now after we understand all this details we can run artillery to start testing socket
 Command for that is artillery run -o <filename> where you want output <file Name> where it should load yaml !!
