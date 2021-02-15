@@ -6,6 +6,7 @@
   "author": "Harsh dave",
   "license": "MIT",
   "dependencies": {
+    "artillery": "^1.6.1",
     "express": "4.13.4",
     "socket.io": "^2.2.0"
   },
