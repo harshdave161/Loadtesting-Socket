@@ -1,8 +1,12 @@
 Load-testing-Socket With Artillery !!
+
 After Git Clone follow The Step's
+
 1):- cd Loadtesting-socket
-2):- npm install 
-3):- npm start (this will start the serve for chat application your can listen the app on Localhost:8080)
+
+2):- npm install 📍
+
+3):- npm start (this will start the serve for chat application your can listen the app on Localhost:8080) 
 
 After the Server is up And Running You can move to load-test folder In Which We Have Main File For Socket testing Which is written in yaml That Is SocketTesting.yml 
 There We Have Target Which is Set to ws://localhost:8080 which is web socket address and where we will hit Your Request For Socket testing The Chat App Which We Started above All Request Will be hitting that server which is ♦local♦ for now (running on localmachine♥)
