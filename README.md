@@ -36,7 +36,7 @@ Command for that is artillery run -o <filename> where you want output <file Name
 
 => artillery run -o makeResult.json SocketTesting.yaml 
 
-(-o optn will write output for result into makeResult.json and save it to json Format)
+(-o option will write output for result into makeResult.json and save it to json Format)
 
 Once You Run test You Will Start Getting New User on localhost:8080 and Load on socket will increase !!
 
