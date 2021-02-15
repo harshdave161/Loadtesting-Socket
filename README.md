@@ -40,7 +40,7 @@ Options used in SocketTesting.yaml to configure test 💎 as per requirement !!
 Now after we understand all this details we can run artillery to start testing socket
 Command for that is artillery run -o ((filename) where you want output) ((file) Name) where it should load yaml) 
 
-=> artillery run -o makeResult.json SocketTesting.yaml 
+sample Command => artillery run -o makeResult.json SocketTesting.yaml 
 
 (-o option will write output for result into makeResult.json and save it to json Format)
 
