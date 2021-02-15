@@ -1,0 +1,32 @@
+config:
+  target: "ws://localhost:8080"
+  # target: "wss://socketio-loadtest.herokuapp.com"
+  ensure:
+    max: 500 # fail if max response time exceeds 500ms
+    maxErrorRate: 1 # fail if error rate exceeds 1%
+  socketio:
+    transports: ["websocket"]
+  processor: "./custom.js" # set a custom processor to load dynamic scenario data
+  phases:
+    - duration: 120
+      arrivalRate: 10 # onStart We Have 10 User 
+      rampTo: 50 # Will ramp Up User To 50 
+      name: "Warm up the application"
+    - duration: 600
+      arrivalRate: 300
+      name: "Sustained max load"
+scenarios:
+  - engine: "socketio"
+    flow:
+      - function: "getChatData" # load variables from custom.js 
+      - emit:
+          channel: "add user" # Adding Socket Channel to hit on
+          data: "{{ name }}" # Data Send as message to socket channel
+      - emit:
+          channel: "new message"
+          data: "{{ greeting }}"
+      - emit:
+          channel: "new message"
+          data: "{{ goodbye }}"
+      - think: 105 # do nothing for 5 seconds, then disconnect
+
