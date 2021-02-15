@@ -11,11 +11,20 @@ We Allso Have One More File custom.js which is used to create fake data (it uses
 
 Optn used in Sockettesting.yaml to configure test
 
-1):- target:- Used For Setting the Socket Address (ws/wss) Type 
-2):- Ensure:- Goes with to otpn max (fail if max response time exceeds 500ms) and maxErrorRate (fail if error rate exceeds 1%)
-3:- transports:- Here We Set Protocol So Be Set ["websocket"] For testing Socket
-4:- processor:- Here We Mention the File Name Where we Want tho load dynamic scenario
-5:- phases:- in this Optn We Have duration (time test Run's in Milliseconds), arrivalRate (onStart the User we Have), rampTo (Will ramp Up User gradually), name (Name For That Phase)
-6:- scenarios:- Here We Define The Flow For Test case 
-7:- engine:- we Set engine To 'socketio'
-8:- flow:- Here we Set Whole Flow What and which channel is hit in test we have three otpn function (), emit (Inside this we have Channel (Socket Channel) and Data (data to send in that event(channel)) otpn), think (do nothing for 5 seconds, then disconnect)
+1):- target:- Used For Setting the Socket Address (ws/wss) Type !!
+
+2):- Ensure:- Goes with to otpn max (fail if max response time exceeds 500ms) and maxErrorRate (fail if error rate exceeds 1%) !!
+
+3:- transports:- Here We Set Protocol So Be Set ["websocket"] For testing Socket !!
+
+4:- processor:- Here We Mention the File Name Where we Want tho load dynamic scenario !!
+
+5:- phases:- in this Optn We Have duration (time test Run's in Milliseconds), arrivalRate (onStart the User we Have), rampTo (Will ramp Up User gradually), name (Name For That Phase) !!
+
+6:- scenarios:- Here We Define The Flow For Test case !!
+
+7:- engine:- we Set engine To 'socketio' !!
+
+8:- flow:- Here we Set Whole Flow What and which channel is hit in test we have three otpn function (), emit (Inside this we have Channel (Socket Channel) and Data (data to send in that event(channel)) otpn), think (do nothing for 5 seconds, then disconnect) !!
+
+Refer this link to know more about artillery https://artillery.io/docs/guides/guides/ws-reference.html#Overview
