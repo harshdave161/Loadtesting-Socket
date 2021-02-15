@@ -38,7 +38,7 @@ Options used in SocketTesting.yaml to configure test 💎 as per requirement !!
 8.3):- think (do nothing for 5 seconds, then disconnect) !!
 
 Now after we understand all this details we can run artillery to start testing socket
-Command for that is artillery run -o <filename> where you want output <file Name> where it should load yaml !!
+Command for that is artillery run -o ((filename) where you want output) ((file) Name) where it should load yaml) 
 
 => artillery run -o makeResult.json SocketTesting.yaml 
 
