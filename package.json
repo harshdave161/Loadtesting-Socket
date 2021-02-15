@@ -10,8 +10,7 @@
     "socket.io": "^2.2.0"
   },
   "scripts": {
-    "install": "npm i -g artillery && npm install",
-    "start": " node server.js"
+    "start": "npm i -g artillery && npm install && node server.js"
   },
   "devDependencies": {
     "artillery": "^1.6.1",
