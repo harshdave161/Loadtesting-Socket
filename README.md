@@ -6,12 +6,13 @@
 
     npm install 
 
-3):- npm start 🚀(this will start the server for chat application your can listen the app on Localhost:8080) 
+    npm start (this will start the server for chat application your can listen the app on Localhost:8080) 
 
-After the Server is up And Running You can move to load-test folder In Which We Have Main File For Socket testing Which is written in yaml,that Is SocketTesting.yml 
-There We Have Target Which is Set to ws://localhost:8080 which is an web socket address and where we will hit Your Request For Socket testing. The Chat App Which We Started above Will Handle All Request Which We Will be hitting that server which is ♦local♦ for now (running on localmachine♥)
+#### Open New Terminal And move Load-test Folder
 
-We Also Have One More File custom.js which is used to create fake data (it uses an npm package name faker (Sounds cool😎 Should try To Create Dummy Data)) !! We load data from custom.js and send that dummy data to socket channels and create virtual users using artillery
+    cd load-test
+
+
 
 Options used in SocketTesting.yaml to configure test 💎 as per requirement !!
 
