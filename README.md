@@ -32,6 +32,12 @@ Options used in Sockettesting.yaml to configure test 💎 as per requirement !!
 8:- flow:- Here we Set Whole Flow What and which channel is hit in test we have three otpn function (), emit (Inside this we have Channel (Socket Channel) and Data (data to send in that event(channel)) otpn), think (do nothing for 5 seconds, then disconnect) !!
 
 Now after we understand all this details we can run artillery to start testing socket
-Command for that is artillery run <
+Command for that is artillery run -o <filename> where you want output <file Name> where it should load yaml !!
+
+=> artillery run -o makeResult.json SocketTesting.yaml 
+
+(-o optn will write output for result into makeResult.json and save it to json Format)
+
+Once You Run test You Will Start Getting New User on localhost:8080 and Load on socket will increase !!
 
 Refer this link to know more about artillery https://artillery.io/docs/guides/guides/ws-reference.html#Overview
