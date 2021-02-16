@@ -8,10 +8,14 @@
 
     npm start (this will start the server for chat application your can listen the app on Localhost:8080) 
 
-#### Open New Terminal And move Load-test Folder
+#### Open New Terminal And move To Load-test Folder
 
     cd load-test
 
+There you Can Find Two Files in That Folder
+SocketTest.yaml (Contains Artillery code)
+custom.js (Contains Dummy Data Generator)
+![image](https://user-images.githubusercontent.com/40320848/108027209-ce409b80-704f-11eb-8828-d875a699c147.png)
 
 
 Options used in SocketTesting.yaml to configure test 💎 as per requirement !!
