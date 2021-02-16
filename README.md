@@ -6,7 +6,9 @@
 
     npm install 
 
-    npm start (this will start the server for chat application your can listen the app on Localhost:8080) 
+    npm start (this will start the server for chat application your can listen the app on Localhost:8080)
+
+![image](https://user-images.githubusercontent.com/40320848/108028834-75becd80-7052-11eb-8a7c-0dadfba4fd0e.png) 
 
 #### Open New Terminal And move To Load-test Folder
 
