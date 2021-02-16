@@ -21,23 +21,23 @@ There you Can Find Two Files in That Folder
 
 
 
-## Options used in SocketTesting.yaml to configure test 💎 as per requirement !!
+## Options used in SocketTesting.yaml to configure test as per requirement !!
 
-- target:- Used For Setting the Socket Address (ws/wss) Type !!
+- `target:- Used For Setting the Socket Address (ws/wss) Type !!`
 
-- Ensure:- Goes with to otpn max (fail if max response time exceeds 500ms) and maxErrorRate (fail if error rate exceeds 1%) !!
+- `Ensure:- Goes with to otpn max (fail if max response time exceeds 500ms) and maxErrorRate (fail if error rate exceeds 1%) !!`
 
-- transports:- Here We Set Protocol So Be Set ["websocket"] For testing Socket !!
+- `transports:- Here We Set Protocol So Be Set ["websocket"] For testing Socket !!`
 
-- processor:- Here We Mention the File Name Where we Want tho load dynamic scenario !!
+- `processor:- Here We Mention the File Name Where we Want tho load dynamic scenario !!`
 
-- phases:- in this Optn We Have duration (time test Run's in Milliseconds), arrivalRate (onStart the User we Have), rampTo (Will ramp Up User gradually), name (Name For That Phase) !!
+- `phases:- in this Optn We Have duration (time test Run's in Milliseconds), arrivalRate (onStart the User we Have), rampTo (Will ramp Up User gradually), name (Name For That Phase) !!`
 
-- scenarios:- Here We Define The Flow For Test case !!
+- `scenarios:- Here We Define The Flow For Test case !!`
 
-- engine:- we Set engine To 'socketio' !!
+- `engine:- we Set engine To 'socketio' !!`
 
-- flow:- Here we Set Whole Flow What and which channel is hit While testing, we have three option 
+- `flow:- Here we Set Whole Test Flow` 
 
 - `function (load function from custom.js Which get's Dummy Data)`
 
@@ -48,13 +48,14 @@ There you Can Find Two Files in That Folder
 Now after we understand all this details we can run artillery to start testing socket
 Command for that is artillery run -o ((filename) where you want output) ((file) Name) where it should load yaml) 
 
-sample Command => artillery run -o makeResult.json SocketTesting.yaml 
+## sample Command 
+    artillery run -o makeResult.json SocketTesting.yaml 
 
-(-o option will write output for result into makeResult.json and save it to json Format)
+'(-o option will write output for result into makeResult.json and save it to json Format)'
 
-Once You Run test You Will Start Getting New User on localhost:8080 and Load on socket will increase !!
+Once You Run test You Will Start Getting New User on localhost:8080 and The Load on socket will increase !!!
 
-Refer this link to know more about artillery https://artillery.io/docs/guides/guides/ws-reference.html#Overview
+### Refer this link to know more about artillery `https://artillery.io/docs/guides/guides/ws-reference.html#Overview`
 
 
 
