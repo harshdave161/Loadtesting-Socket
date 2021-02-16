@@ -45,13 +45,10 @@ There you Can Find Two Files in That Folder
 
 - `think (do nothing for 5 seconds, then disconnect) !!`
 
-Now after we understand all this details we can run artillery to start testing socket
-Command for that is artillery run -o ((filename) where you want output) ((file) Name) where it should load yaml) 
-
-## sample Command 
+## Command to Start Test
     artillery run -o makeResult.json SocketTesting.yaml 
 
-'(-o option will write output for result into makeResult.json and save it to json Format)'
+#### (-o option will write output for result into makeResult.json and save it to json Format)'
 
 Once You Run test You Will Start Getting New User on localhost:8080 and The Load on socket will increase !!!
 
