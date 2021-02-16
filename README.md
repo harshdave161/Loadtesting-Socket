@@ -14,36 +14,36 @@
 
 There you Can Find Two Files in That Folder
 
+### custom.js (Contains Dummy Data Generator)
+![image](https://user-images.githubusercontent.com/40320848/108027209-ce409b80-704f-11eb-8828-d875a699c147.png)
 ### SocketTest.yaml (Contains Artillery code)
 ![image](https://user-images.githubusercontent.com/40320848/108027321-fd570d00-704f-11eb-97d0-06d95476dab4.png)
 
-### custom.js (Contains Dummy Data Generator)
-![image](https://user-images.githubusercontent.com/40320848/108027209-ce409b80-704f-11eb-8828-d875a699c147.png)
 
 
-Options used in SocketTesting.yaml to configure test 💎 as per requirement !!
+## Options used in SocketTesting.yaml to configure test 💎 as per requirement !!
 
-1- target:- Used For Setting the Socket Address (ws/wss) Type !!
+- target:- Used For Setting the Socket Address (ws/wss) Type !!
 
-2- Ensure:- Goes with to otpn max (fail if max response time exceeds 500ms) and maxErrorRate (fail if error rate exceeds 1%) !!
+- Ensure:- Goes with to otpn max (fail if max response time exceeds 500ms) and maxErrorRate (fail if error rate exceeds 1%) !!
 
-3- transports:- Here We Set Protocol So Be Set ["websocket"] For testing Socket !!
+- transports:- Here We Set Protocol So Be Set ["websocket"] For testing Socket !!
 
-4- processor:- Here We Mention the File Name Where we Want tho load dynamic scenario !!
+- processor:- Here We Mention the File Name Where we Want tho load dynamic scenario !!
 
-5- phases:- in this Optn We Have duration (time test Run's in Milliseconds), arrivalRate (onStart the User we Have), rampTo (Will ramp Up User gradually), name (Name For That Phase) !!
+- phases:- in this Optn We Have duration (time test Run's in Milliseconds), arrivalRate (onStart the User we Have), rampTo (Will ramp Up User gradually), name (Name For That Phase) !!
 
-6- scenarios:- Here We Define The Flow For Test case !!
+- scenarios:- Here We Define The Flow For Test case !!
 
-7- engine:- we Set engine To 'socketio' !!
+- engine:- we Set engine To 'socketio' !!
 
-8- flow:- Here we Set Whole Flow What and which channel is hit While testing, we have three option 
+- flow:- Here we Set Whole Flow What and which channel is hit While testing, we have three option 
 
-8.1- function (load function from custom.js Which get's Dummy Data)
+- `function (load function from custom.js Which get's Dummy Data)`
 
-8.2- emit (Inside this we have Channel (Socket Channel) and Data (data to send in that event(channel)) otpn)
+- `emit (Inside this we have Channel (Socket Channel) and Data (data to send in that event(channel)) otpn)`
 
-8.3- think (do nothing for 5 seconds, then disconnect) !!
+- `think (do nothing for 5 seconds, then disconnect) !!`
 
 Now after we understand all this details we can run artillery to start testing socket
 Command for that is artillery run -o ((filename) where you want output) ((file) Name) where it should load yaml) 
