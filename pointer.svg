@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52.702" height="246.274" viewBox="0 0 52.702 246.274">
+    <defs>
+        <filter id="Path_79" width="50.774" height="246.274" x="1.927" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dx="2" dy="2"/>
+            <feGaussianBlur result="blur" stdDeviation="2"/>
+            <feFlood flood-color="#4a2a06" flood-opacity=".678"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="Ellipse_39" width="51" height="51" x="0" y="175.67" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-2" stdDeviation="5"/>
+            <feFlood flood-opacity=".349"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <radialGradient id="radial-gradient" cx=".5" cy=".5" r=".63" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#f5cf7c"/>
+            <stop offset="1" stop-color="#986121"/>
+        </radialGradient>
+        <linearGradient id="linear-gradient" x1="1.18" x2="-.67" y1=".919" y2=".137" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#986121"/>
+            <stop offset=".648" stop-color="#f5cf7c"/>
+            <stop offset="1" stop-color="#fff"/>
+        </linearGradient>
+        <style>
+            .cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="pointer" transform="translate(5.927 4)">
+        <g filter="url(#Path_79)" transform="translate(-5.93 -4)">
+            <g id="Path_79-2" fill="url(#linear-gradient)" transform="translate(100.81 50.13)">
+                <path d="M-74.805 187.65l-19.824-32.292 22.432-198.88 15.83 198.88-18.438 32.292z" class="cls-4"/>
+                <path fill="#ffecc4" d="M-72.24-40.911L-94.37 155.3l19.558 31.858 18.189-31.858L-72.24-40.91m.086-5.223l16.042 201.55-18.685 32.724-20.09-32.724 22.733-201.55z"/>
+            </g>
+        </g>
+        <circle id="Ellipse_40" cx="12.5" cy="12.5" r="12.5" fill="#542d00" transform="translate(7.073 184.67)"/>
+        <g filter="url(#Ellipse_39)" transform="translate(-5.93 -4)">
+            <g id="Ellipse_39-2" fill="url(#radial-gradient)" stroke="#f5cf7c" stroke-width="0.5px" transform="translate(15 190.67)">
+                <circle cx="10.5" cy="10.5" r="10.5" class="cls-4"/>
+                <circle cx="10.5" cy="10.5" r="10.25" fill="none"/>
+            </g>
+        </g>
+    </g>
+</svg>
